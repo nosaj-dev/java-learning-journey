@@ -1,0 +1,22 @@
+name: java-dev
+services:
+  maven:
+    image: maven:3.9.8-eclipse-temurin-21-alpine
+    container_name: maven_service
+    volumes:
+      - .:/usr/src/learn
+    working_dir: /usr/src/learn
+    command: mvn clean package
+    ports:
+      - "1312:1312"
+  eclipse-temurin:
+    image: eclipse-temurin:21-alpine
+    container_name: temurin_service
+    volumes:
+      - .:/usr/src/learn
+    working_dir: /usr/src/learn
+    command: java -jar "/usr/src/learn/target/learn-1.0-SNAPSHOT.jar"
+    ports:
+      - "2323:2323"
+    depends_on:
+      - maven
