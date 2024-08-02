@@ -1,48 +1,43 @@
 package site.nosaj.oop.encapsulation;
 
 class BankAccount {
-   private String owner;
-   private double balance;
+    private final String owner;
+    private double balance;
 
-   public BankAccount(String owner, double balance) {
-       setBalance(balance);
-       setOwner(owner);
-   }
-    protected String getOwner() {
-        return owner;
+    public BankAccount(String owner, double balance) {
+        this.owner = owner;
+        this.balance = balance;
     }
 
-    private void setOwner(String owner) {
-        this.owner = owner;
+    protected String getOwner() {
+        return owner;
     }
 
     protected double getBalance() {
         return balance;
     }
 
-    protected void setBalance(double balance) {
-        this.balance = balance;
-    }
-
     //behavior
     protected String deposit(double amount) {
-        setBalance(getBalance() + amount);
+        if (amount < 0) return "invalid amount";
+        this.balance += amount;
         return "deposited " + amount + "\n"
                 + "new balance: " + getBalance();
     }
+
     protected String withdraw(double amount) {
-       if(getBalance() < amount) return "not enough money";
-       else {
-           setBalance(getBalance() - amount);
-           return "withdrew " + amount + "\n"
-                   + "new balance: " + getBalance();
-       }
+        if (this.balance < amount) return "not enough money";
+        else {
+            this.balance -= amount;
+            return "withdrew " + amount + "\n"
+                    + "new balance: " + getBalance();
+        }
 
     }
 
     //bonus
     @Override
     public String toString() {
-        return "owner: " + getOwner() + ", balance: " + getBalance();
+        return "owner: " + this.owner + ", balance: " + this.balance;
     }
 }
