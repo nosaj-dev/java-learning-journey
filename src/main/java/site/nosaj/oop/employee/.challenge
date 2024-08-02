@@ -1,0 +1,13 @@
+//
+It's time to practice representing objects in code by creating an employee with Java.
+In this challenge, you'll represent an employee in Java by creating an employee class.
+The class should have attributes for the employee's name, age, salary and location.
+Feel free to get creative and add more attributes if you'd like.
+The employee class should also have a raise behavior that raises the employee's salary.
+Whether this behavior has a parameter or not is up to you.
+As a part of this challenge you'll have to determine which members if any, should be static versus non-static.
+Once you've created your employee class you should create another class for building your employee instances.
+In the main function of the main class create at least two employees and give one employee a raise then print out
+the salaries of both employees to ensure the raise took effect.
+Good luck and have fun.
+//
