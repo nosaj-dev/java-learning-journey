@@ -1,0 +1,12 @@
+Let's practice using encapsulation. In this challenge, you'll put your encapsulation
+skills to the test by modifying a Java program to use this object oriented principle.
+We'll start off with a bank account class. It has two attributes, owner and balance.
+Your job is to add behavior to this program so that the owner and balance attributes
+can be encapsulated in the bank account class while still being accessible to other
+classes indirectly. Specifically you should add a withdrawal method as well as the
+deposit method. You might also add a few getters to retrieve the balance or the owner
+of the account. In order to create a new bank account instance, you'll also need to
+add a constructor to the class. Once you've set up your bank account class, create a
+main class that creates a bank account. Withdraw a certain amount from the bank account
+and then print out the resulting balance to the console. The attributes of the bank
+account class should not be directly accessible. Good luck and have fun.
