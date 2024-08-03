@@ -1,0 +1,12 @@
+Let's practice leveraging polymorphism in Java to reduce application
+complexity.
+Let's say you want to add a series of contacts to your phone.
+For some contacts, you have a name, phone number and email.
+For others, you just have a name and phone number.
+There are also a few where you only have a name and an email address.
+In this challenge, you'll create a program that allows you to create
+contact instances in a variety of ways.
+After creating a contact instance, you should print it out to the
+console.
+In the printout, display the information about the contact.
+Good luck and have fun.
