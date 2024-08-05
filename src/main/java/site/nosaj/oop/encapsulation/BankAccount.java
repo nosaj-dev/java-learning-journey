@@ -10,11 +10,11 @@ class BankAccount {
     }
 
     protected String getOwner() {
-        return owner;
+        return this.owner;
     }
 
     protected double getBalance() {
-        return balance;
+        return this.balance;
     }
 
     //behavior
@@ -22,7 +22,7 @@ class BankAccount {
         if (amount < 0) return "invalid amount";
         this.balance += amount;
         return "deposited " + amount + "\n"
-                + "new balance: " + getBalance();
+                + "new balance: " + this.balance;
     }
 
     protected String withdraw(double amount) {
@@ -30,7 +30,7 @@ class BankAccount {
         else {
             this.balance -= amount;
             return "withdrew " + amount + "\n"
-                    + "new balance: " + getBalance();
+                    + "new balance: " + this.balance;
         }
 
     }
