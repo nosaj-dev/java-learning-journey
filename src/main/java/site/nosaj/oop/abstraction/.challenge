@@ -1,0 +1,6 @@
+For this I don't have a challenge but I'll write my own one.
+smth simple:
+-ill write an animal abstract class with makeSound() method abstract so every type of animal could declare his own makeSound().
+
+- by doing this i can use the method in the Animal class without having to declare it yet
+- if i got it correctly, this is the purpose of the abstraction
