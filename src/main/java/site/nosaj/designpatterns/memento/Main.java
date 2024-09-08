@@ -8,6 +8,10 @@ public class Main {
         a.createState();
         a.setName("B");
         a.createState();
+        a.setName("C");
+        a.createState();
+        System.out.println(a.getName());
+        a.undo();
         System.out.println(a.getName());
         a.undo();
         System.out.println(a.getName());
